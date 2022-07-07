@@ -1,0 +1,2 @@
+# bxBlue-Case
+Projeto: PokeCoin
