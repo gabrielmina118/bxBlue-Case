@@ -1,4 +1,4 @@
-POST  http://localhost:3003/investor/create
+POST  https://bx-blue-back-end.herokuapp.com/investor/create
 Content-Type: application/json
 
 {
@@ -9,7 +9,7 @@ Content-Type: application/json
 
 ###
 # @name login
-POST http://localhost:3003/investor/login
+POST https://bx-blue-back-end.herokuapp.com/investor/login
 Content-Type: application/json
 
 {
@@ -19,7 +19,7 @@ Content-Type: application/json
 
 ###
 # @name registerPokemon
-POST http://localhost:3003/pokemon/purchase/ditto
+POST https://bx-blue-back-end.herokuapp.com/pokemon/purchase/bulbasaur
 Authorization: {{login.response.body.token}}
 Content-Type: application/json
 
@@ -29,7 +29,7 @@ Content-Type: application/json
 
 ###
 # @name registerPokemon
-GET http://localhost:3003/pokemon/history
+GET https://bx-blue-back-end.herokuapp.com/pokemon/history
 Authorization: {{login.response.body.token}}
 
 
