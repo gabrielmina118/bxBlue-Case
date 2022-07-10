@@ -1,0 +1,36 @@
+POST  http://localhost:3003/investor/create
+Content-Type: application/json
+
+{
+    "name":"Gabriel",
+    "password":"123123",
+    "email":"gabriel@gmail.com"
+}
+
+###
+# @name login
+POST http://localhost:3003/investor/login
+Content-Type: application/json
+
+{
+    "email":"gabriel@gmail.com",
+    "password":"123123"
+}
+
+###
+# @name registerPokemon
+POST http://localhost:3003/pokemon/purchase/ditto
+Authorization: {{login.response.body.token}}
+Content-Type: application/json
+
+{
+    "totalPurchase":312.3
+}
+
+###
+# @name registerPokemon
+GET http://localhost:3003/pokemon/history
+Authorization: {{login.response.body.token}}
+
+
+
